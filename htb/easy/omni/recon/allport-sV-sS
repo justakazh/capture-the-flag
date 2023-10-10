@@ -1,0 +1,22 @@
+┌──(justakazh㉿justakazh)-[~/Documents/htb/easy/omni]
+└─$ sudo nmap -sV -sS -p135,8080,5985,29819,29820 10.10.10.204
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-10-04 07:38 EDT
+Nmap scan report for 10.10.10.204
+Host is up (0.17s latency).
+
+PORT      STATE SERVICE  VERSION
+135/tcp   open  msrpc    Microsoft Windows RPC
+5985/tcp  open  upnp     Microsoft IIS httpd
+8080/tcp  open  upnp     Microsoft IIS httpd
+29819/tcp open  arcserve ARCserve Discovery
+29820/tcp open  unknown
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port29820-TCP:V=7.93%I=7%D=10/4%Time=651D4EC8%P=x86_64-pc-linux-gnu%r(N
+SF:ULL,10,"\*LY\xa5\xfb`\x04G\xa9m\x1c\xc9}\xc8O\x12")%r(GenericLines,10,"
+SF:\*LY\xa5\xfb`\x04G\xa9m\x1c\xc9}\xc8O\x12")%r(Help,10,"\*LY\xa5\xfb`\x0
+SF:4G\xa9m\x1c\xc9}\xc8O\x12")%r(JavaRMI,10,"\*LY\xa5\xfb`\x04G\xa9m\x1c\x
+SF:c9}\xc8O\x12");
+Service Info: Host: PING; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 48.67 seconds
