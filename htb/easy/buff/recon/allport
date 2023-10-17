@@ -1,0 +1,9 @@
+# Nmap 7.93 scan initiated Mon Oct 16 05:36:13 2023 as: nmap -sS -p- -T5 -oN allport 10.10.10.198
+Nmap scan report for 10.10.10.198
+Host is up (0.035s latency).
+Not shown: 65533 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+7680/tcp open  pando-pub
+8080/tcp open  http-proxy
+
+# Nmap done at Mon Oct 16 05:38:03 2023 -- 1 IP address (1 host up) scanned in 111.03 seconds
